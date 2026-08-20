@@ -1,0 +1,17 @@
+{
+  "name": "食光盒 · 物品储存管理",
+  "short_name": "食光盒",
+  "description": "本地优先的物品储存管理：记录买了什么、放哪了、何时到期，临期主动提醒。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f6f8",
+  "theme_color": "#0f9d8a",
+  "icons": [
+    { "src": "./assets/icon192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icon512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icon512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

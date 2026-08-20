@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0f9d8a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" type="image/png" href="./assets/icon192.png" />
+  <link rel="apple-touch-icon" href="./assets/icon192.png" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <title>食光盒</title>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">🍱</span>
+        <span class="brand-name">食光盒</span>
+      </div>
+      <div class="today" id="todayLabel"></div>
+    </header>
+
+    <main id="view" class="view"><!-- views render here --></main>
+
+    <nav class="tabbar">
+      <button class="tab" data-view="home"><span>🏠</span><label>首页</label></button>
+      <button class="tab" data-view="add"><span>➕</span><label>录入</label></button>
+      <button class="tab" data-view="list"><span>📋</span><label>清单</label></button>
+      <button class="tab" data-view="more"><span>👤</span><label>我的</label></button>
+    </nav>
+  </div>
+
+  <!-- modal layer -->
+  <div id="modal" class="modal-mask hidden">
+    <div class="modal-card" id="modalCard"></div>
+  </div>
+
+  <!-- toast -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="./assets/db.js"></script>
+  <script src="./assets/shelf.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "appId": "com.shiguanghe.app",
+  "appName": "食光盒",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "shiguanghe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "食光盒 - 本地优先的物品储存管理 App（PWA + Capacitor 安卓壳）",
+  "scripts": {
+    "www": "node build-www.js",
+    "sync": "node build-www.js && cap sync",
+    "android": "node build-www.js && cap sync && cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
+    "@capacitor/core": "^8.5.0"
+  }
+}
